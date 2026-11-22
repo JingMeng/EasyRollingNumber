@@ -1,17 +1,16 @@
-package com.newcaoguo.rollingnumber;
+﻿package com.newcaoguo.rollingnumber;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 
 import com.newcaoguo.easyrollingnumber.view.ScrollingDigitalAnimation;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ScrollingDigitalAnimation money;    // 显示金钱的自定义控件
-    private ScrollingDigitalAnimation number;  // 显示数字的自定义控件
-    private ScrollingDigitalAnimation percentage; // 显示百分比的自定义控件
-
+    private ScrollingDigitalAnimation money;    // 鏄剧ず閲戦挶鐨勮嚜瀹氫箟鎺т欢
+    private ScrollingDigitalAnimation number;  // 鏄剧ず鏁板瓧鐨勮嚜瀹氫箟鎺т欢
+    private ScrollingDigitalAnimation percentage; // 鏄剧ず鐧惧垎姣旂殑鑷畾涔夋帶浠?
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * 启动按钮单击事件
+     * 鍚姩鎸夐挳鍗曞嚮浜嬩欢
      */
     public void start(View view) {
-        money.setPrefixString("¥");//设置符号
-        money.setNumberString("9", "9999999999");//设置起始于结束的数字
+        money.setPrefixString("楼");//璁剧疆绗﹀彿
+        money.setNumberString("9", "9999999999");//璁剧疆璧峰浜庣粨鏉熺殑鏁板瓧
         money.setDuration(3000);
         number.setNumberString("1234567890");
         number.setDuration(4000);
@@ -41,3 +40,4 @@ public class MainActivity extends AppCompatActivity {
         percentage.setDuration(5000);
     }
 }
+

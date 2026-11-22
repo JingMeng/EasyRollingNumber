@@ -3,7 +3,7 @@ package com.newcaoguo.easyrollingnumber.view;
 import android.animation.TypeEvaluator;
 import android.animation.ValueAnimator;
 import android.content.Context;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
@@ -12,7 +12,7 @@ import java.math.BigInteger;
 import java.text.DecimalFormat;
 
 
-public class ScrollingDigitalAnimation extends android.support.v7.widget.AppCompatTextView {
+public class ScrollingDigitalAnimation extends androidx.appcompat.widget.AppCompatTextView {
 
     private String numStart = "0";
     private String numEnd;
